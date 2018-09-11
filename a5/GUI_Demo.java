@@ -20,7 +20,7 @@ public class GUI_Demo extends JFrame{
 		// this is the jframe to place stuff
 		jf.setLayout(null);
 		jf.setSize(500,400);
-		jf.setLocation(2000,300);
+		jf.setLocation(200,200);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		// create a border for user by swingx objects
