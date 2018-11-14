@@ -10,21 +10,9 @@ import java.sql.*;
 
 public class UsersDB {
 	Connection c = null;
-	
-	// override method to create the class, connect to the database and 
-	// create the tables needed
-	public UsersDB(){
-		connectDB();
-		createTable();
-	}
-	
-	// main class which creates the UserDB object
-	public static void main( String args[] ) {
-		new UsersDB();
-	}
    
 	// connecting to the data base file 
-	private void connectDB(){
+	public void connectDB(){
 		try {
 			Class.forName("org.sqlite.JDBC");
 			c = DriverManager.getConnection("jdbc:sqlite:Users.db");
@@ -35,7 +23,7 @@ public class UsersDB {
 	}
    
 	// This methis creates the people table if does not exist. 
-	private void createTable(){
+	public void createTable(){
 		Statement stmt = null;
 		try {
 			stmt = c.createStatement();
