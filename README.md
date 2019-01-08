@@ -1,2 +1,2 @@
-# ciss301_spring2018
+# CISS 301
 This is my class repo for uploading examples during class. 
